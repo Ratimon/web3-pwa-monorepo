@@ -4,3 +4,8 @@
 ```bash
 pnpm init
 ```
+
+```bash
+forge init contracts
+cd contracts
+```
