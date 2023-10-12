@@ -32,7 +32,10 @@
     "script": "ldenv forge script --private-key @@DEPLOYER_PRIVATE_KEY --rpc-url @@RPC_URL_:DEPLOYMENT_CONTEXT,RPC_URL --broadcast @@",
     "local_node": "rm -Rf deployments/localhost && anvil",
     "----------------------LOCAL DEPLOYMENT ----------------------": "",
-    "export-local": "forge-deploy export localhost ../web-svelte/src/data/contracts.ts,../web-svelte/src/data/contracts.json",
+    "export-local": "forge-deploy export localhost ../web/src/data/contracts.ts,../web-svelte/src/data/contracts.json",
+    "deploy_0": "ldenv -m localhost forge script script/000_DeployMockERC20.s.sol --private-key @@DEPLOYER_PRIVATE_KEY --rpc-url @@RPC_URL_:DEPLOYMENT_CONTEXT,RPC_URL --broadcast ~~ forge-deploy sync ~~ @@",
+    "transfer_token": "pnpm script localhost script/001_TransferMockERC20.s.sol",
+
     "----------------------MAINNET DEPLOYMENT ----------------------": ""
   }
 }

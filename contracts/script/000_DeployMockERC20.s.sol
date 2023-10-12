@@ -10,6 +10,6 @@ contract DeployMockERC20AScript is DeployScript {
     using DeployerFunctions for Deployer;
 
     function deploy() external returns (MockERC20) {
-        return MockERC20(deployer.deploy_MockERC20("MockERC20_A", "MockTokenA", "TA", 18));
+        return MockERC20(deployer.deploy_MockERC20("MockERC20", "MockToken", "TA", 18));
     }
 }
