@@ -74,18 +74,16 @@ pnpm stop
 
 ## Re-initiate Project
 
-Assuming that you have [zellij](https://zellij.dev/) installed:
+```bash
+pnpm init
+```
 
 ```bash
-pnpm i
-```
-
-```sh
+forge init contracts
 cd contracts
-pnpm i
 ```
 
-```sh
+```bash
+npm create svelte@latest web
 cd web
-pnpm i
 ```
