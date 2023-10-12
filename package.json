@@ -2,10 +2,27 @@
   "name": "web3-pwa-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx only-allow pnpm",
+    "---------------------- UTILITIES ----------------------": "",
+    "env": "ldenv env",
+    "contracts:deploy": "pnpm --filter ./contracts deploy_all",
+    "contracts:export-local": "pnpm --filter ./contracts export-local",
+    "web:dev": "pnpm --filter ./web dev"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ratimon/uniswap-calldata-optimization-monorepo.git"
+  },
+  "author": "Rati Montreewat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ratimon/uniswap-calldata-optimization-monorepo/issues"
+  },
+  "homepage": "https://github.com/Ratimon/uniswap-calldata-optimization-monorepo#readme",
+  "devDependencies": {
+    "ldenv": "^0.3.7"
+  }
 }

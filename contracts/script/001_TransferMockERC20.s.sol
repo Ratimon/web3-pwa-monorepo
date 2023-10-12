@@ -6,7 +6,7 @@ import {Deployer, getDeployer} from "forge-deploy/Deployer.sol";
 
 import {MockERC20} from "@main/mock/MockERC20.sol";
 
-contract RegisterMockERC20Script is Script {
+contract TransferMockERC20Script is Script {
     Deployer deployer;
 
     uint256 public constant WAD = 1e18;
@@ -39,7 +39,7 @@ contract RegisterMockERC20Script is Script {
 
         vm.broadcast();
         token.mint(msg.sender, amount);
-        
+
         vm.broadcast();
         token.transfer(recipient, amount);
         console.log(string.concat("after: token balance"));
