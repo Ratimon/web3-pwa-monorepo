@@ -87,3 +87,10 @@ cd contracts
 npm create svelte@latest web
 cd web
 ```
+
+Then install tailwind:
+```bash
+pnpm install -D tailwindcss postcss autoprefixer
+pnpm tailwindcss init -p
+...
+```
