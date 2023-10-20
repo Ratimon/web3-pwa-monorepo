@@ -1,0 +1,22 @@
+{
+  "name": "indexer",
+  "version": "1.0.0",
+  "description": "",
+  "volta": {
+    "node": "18.7.0"
+  },
+  "scripts": {
+    "build": "pnpm -r build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ldenv": "^0.3.7",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "wait-on": "^7.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
